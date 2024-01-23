@@ -1,0 +1,120 @@
+.container__incricao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    padding: 2.5rem 1rem;
+}
+
+.container__incricao--mobile {
+    height: 6.4375rem;
+    width: 11.375rem;
+}
+
+.container__incricao--tablet {
+    display: none;
+}
+
+.container__incricao .container__incricao--form-titulo {
+    font-size: 1.625rem;
+}
+
+.container__incricao .container__incricao--form-texto {
+    font-size: 1.375rem;
+}
+
+.container__incricao .container__incricao--div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 68.875rem;
+}
+
+.container__incricao--form-input {
+    width: 20.5rem;
+    height: 4.0625rem;
+    border-radius: 4.0625rem;
+    border: 1px solid var(--azul-escuro);
+    margin: 0 auto;
+    display: inline-flex;
+    row-gap: 1.5rem;
+}
+
+.container__incricao--form-input input {
+    border: none;
+    outline: none;
+    width: 65%;
+    margin-left: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    color: #0C0421;
+}
+
+.container__incricao--form-input button {
+    width: 35%;
+    color: white;
+    background: var(--azul-botao);
+    border-radius: 0 4.0625rem 4.0625rem 0;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__incricao--form-input button:hover{
+    cursor: pointer;
+    background: var(--lilas-escuro);
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Seção inscrição */
+
+    .container__incricao {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container__incricao .container__incricao--mobile {
+        display: none;
+    }
+
+    .container__incricao .container__incricao--form-titulo {
+        font-size: 1.9375rem;
+        font-family: Krona One;
+        font-weight: 400;
+    }
+
+    .container__incricao--form-texto {
+        font-size: .8125rem;
+    }
+
+    .container__incricao--form-input {
+        width: 23rem;
+    }
+
+    .container__incricao--tablet {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+      /* Seção inscrição */
+
+  .container__incricao--form-input {
+    width: 49.375rem;
+    height: 4.0625rem;
+    row-gap: 1.5rem;
+  }
+
+}

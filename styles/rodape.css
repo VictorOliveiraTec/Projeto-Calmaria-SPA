@@ -1,0 +1,14 @@
+.rodape {
+    background: var(--gradiente);
+    background: #E8F5C8;
+    padding: 2rem;
+    text-align: center;
+    font-size: .9375rem;
+}
+
+.rodape .rodape__nav--lista {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: .9375rem 0;
+}

@@ -1,0 +1,56 @@
+/* Seção cards*/
+.container__cards {
+  background: var(--gradiente);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  row-gap: 1.5rem;
+}
+
+.container .container__cards .container__cards--card {
+  background: var(--gradiente-card);
+  max-width: 40.5rem;
+  height: auto;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #fff;
+}
+
+.container__cards--card-title {
+  font-size: 1.625rem;
+}
+
+.container__cards--card-texto {
+  font-size: .9375rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .container__cards--card-texto {
+    font-size: 1.375rem;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .container .container__cards {
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+
+  .container .container__cards .container__cards--card {
+    max-width: 24rem;
+    height: 32.9375rem;
+    row-gap: 1.1875rem;
+    justify-content: center;
+  }
+  
+}
